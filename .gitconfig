@@ -1,0 +1,44 @@
+[user]
+  name = Dimitar Banev
+  email = banev_dimitar@mail.com
+
+[color]
+	status = auto
+	diff = auto
+	branch = auto
+	interactive = auto
+
+[merge]
+	tool = opendiff
+	summary = true
+  conflictstyle = diff3
+
+[core]
+  editor = nvim
+  pager = delta
+
+[init]
+  defaultBranch = main
+
+[interactive]
+	diffFilter = delta --color-only
+
+[delta]
+	navigate = true
+	light = false
+	side-by-side = true
+	line-numbers = true
+	hyperlinks = true
+
+[diff]
+	colorMoved = default
+	algorithm = histogram
+
+[branch]
+	sort = -committerdate
+
+[includeIf "gitdir:~/Projects/gitlab/"]
+  path = ~/Projects/gitlab/.gitconfig.inc
+
+[push]
+	autoSetupRemote = true
