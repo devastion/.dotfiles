@@ -1,0 +1,52 @@
+[env]
+term = "xterm-256color"
+
+[window]
+padding = { x = 10, y = 5 }
+dynamic_padding = true
+decorations = "Buttonless"
+option_as_alt = "OnlyLeft"
+decorations_theme_variant = "Dark"
+
+[scrolling]
+history = 100000
+
+[font]
+normal.family = "JetbrainsMono Nerd Font Mono"
+size = 16.0
+
+[colors.primary]
+background = '#1f2329'
+foreground = '#abb2bf'
+
+[colors.normal]
+black   = '#1e2127'
+red     = '#e06c75'
+green   = '#98c379'
+yellow  = '#d19a66'
+blue    = '#61afef'
+magenta = '#c678dd'
+cyan    = '#56b6c2'
+white   = '#abb2bf'
+
+[colors.bright]
+black   = '#5c6370'
+red     = '#e06c75'
+green   = '#98c379'
+yellow  = '#d19a66'
+blue    = '#61afef'
+magenta = '#c678dd'
+cyan    = '#56b6c2'
+white   = '#ffffff'
+
+[selection]
+save_to_clipboard = true
+
+[mouse]
+hide_when_typing = true
+
+[keyboard]
+bindings = [
+  { key = "Right", mods = "Alt", chars = "\u001BF" },
+  { key = "Left", mods = "Alt", chars = "\u001BB" },
+]
