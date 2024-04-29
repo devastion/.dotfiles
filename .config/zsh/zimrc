@@ -3,7 +3,6 @@ zmodule environment
 zmodule zsh-users/zsh-completions
 zmodule completion
 zmodule Aloxaf/fzf-tab
-zmodule olets/zsh-abbr
 zmodule zdharma-continuum/fast-syntax-highlighting
 zmodule zsh-users/zsh-autosuggestions
 zmodule fzf
