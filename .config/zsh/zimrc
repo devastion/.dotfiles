@@ -1,13 +1,9 @@
-zmodule minimal
+zmodule romkatv/powerlevel10k --use degit
 zmodule environment
-zmodule input
 zmodule k
-zmodule prompt-pwd
-zmodule git-info
 zmodule zsh-users/zsh-completions
 zmodule completion
-zmodule Aloxaf/fzf-tab
 zmodule olets/zsh-abbr
-zmodule zsh-users/zsh-syntax-highlighting
+zmodule zdharma-continuum/fast-syntax-highlighting
 zmodule zsh-users/zsh-autosuggestions
 zmodule fzf
