@@ -1,0 +1,5 @@
+#!/bin/sh
+
+alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%ci) %C(bold blue)<%an>%Creset' --abbrev-commit"
+alias ls="eza -la --icons --group-directories-first"
+alias grep="rg"

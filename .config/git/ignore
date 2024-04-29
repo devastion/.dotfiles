@@ -1,4 +1,5 @@
 .DS_Store
 .zcompdump*
 .zsh_history*
-lazy-lock.json
+.zsh_sessions
+.zcompcache
