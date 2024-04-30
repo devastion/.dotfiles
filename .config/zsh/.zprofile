@@ -30,3 +30,5 @@ fpath=(
   "${ZDOTDIR}/completions"
   $fpath
 )
+
+bindkey -e

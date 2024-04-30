@@ -6,3 +6,4 @@ zmodule Aloxaf/fzf-tab
 zmodule zdharma-continuum/fast-syntax-highlighting
 zmodule zsh-users/zsh-autosuggestions
 zmodule fzf
+zmodule olets/zsh-abbr

@@ -17,7 +17,7 @@ export XDG_PROJECTS_DIR=${XDG_PROJECTS_DIR:-$HOME/Projects}
 
 export ZDOTDIR="${ZDOTDIR:-$HOME/.config/zsh}"
 export ZIM_HOME="${ZIM_HOME:-$XDG_CACHE_HOME/zim}"
-export ZIM_CONFIG_FILE="${ZIM_CONFIG_FILE:-$ZDOTDIR/zimrc}"
+export ZIM_CONFIG_FILE="${ZIM_CONFIG_FILE:-$ZDOTDIR/.zimrc}"
 export DOTFILES="${DOTFILES:-$HOME/.dotfiles}"
 export TMUX_PLUGINS_PATH="${TMUX_PLUGINS_PATH:-$HOME/.tmux/plugins}"
 
