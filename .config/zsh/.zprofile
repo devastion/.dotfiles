@@ -1,6 +1,6 @@
 export LANG="en_US.UTF-8"
 export EDITOR="nvim"
-export VISUAL="code"
+export VISUAL="nvim"
 export WORDCHARS="*?[]~=&;&%^(){}<>"
 
 # homebrew
