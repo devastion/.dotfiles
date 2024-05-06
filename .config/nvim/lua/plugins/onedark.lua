@@ -8,7 +8,7 @@ return {
     },
   },
 
-  -- Configure LazyVim to load gruvbox
+  -- Configure LazyVim to load onedark
   {
     "LazyVim/LazyVim",
     opts = {

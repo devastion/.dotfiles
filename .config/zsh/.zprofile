@@ -14,7 +14,8 @@ typeset -gU fpath path cdpath
 path=(
   "/opt/homebrew/bin"
   "/opt/homebrew/sbin"
-  "${HOME}.cargo/bin"
+  "${HOME}/.cargo/bin"
+  "${HOME}/.local/bin"
   $path
 )
 
