@@ -16,6 +16,7 @@ path=(
   "/opt/homebrew/sbin"
   "${HOME}/.cargo/bin"
   "${HOME}/.local/bin"
+  "${HOME}/.orbstack/bin"
   $path
 )
 
@@ -29,6 +30,7 @@ cdpath=(
 fpath=(
   $(brew --prefix)/share/zsh/site-functions
   "${ZDOTDIR}/completions"
+  "/Applications/OrbStack.app/Contents/Resources/completions/zsh"
   $fpath
 )
 
