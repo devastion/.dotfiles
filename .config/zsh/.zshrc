@@ -20,6 +20,9 @@ fi
 # initialize modules.
 source ${ZIM_HOME}/init.zsh
 
+# load custom functions
+autoload -Uz ${fpath[1]}/*(:t)
+
 # zstyle
 zstyle ':completion:*:git-checkout:*' sort false
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}

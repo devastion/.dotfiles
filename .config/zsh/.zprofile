@@ -42,6 +42,7 @@ cdpath=(
 )
 
 fpath=(
+  "${ZDOTDIR}/functions"
   $(brew --prefix)/share/zsh/site-functions
   "${ZDOTDIR}/completions"
   "/Applications/OrbStack.app/Contents/Resources/completions/zsh"

@@ -6,6 +6,11 @@ alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %
 # ls
 alias ls="eza --long --all --grid -h --icons --group-directories-first --sort=extension"
 
-# search
+# security
+alias chmod='chmod --preserve-root -v'
+alias chown='chown --preserve-root -v'
+
+# misc
 alias grep="rg"
+alias man="batman"
 alias search="fzf --preview 'bat --color=always --style=numbers --line-range=:500 {}' | xargs nvim"
