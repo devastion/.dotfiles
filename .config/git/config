@@ -16,6 +16,7 @@
 [core]
   editor = nvim
   pager = delta
+  excludesFile = ~/.config/git/ignore
 
 [init]
   defaultBranch = main
@@ -37,8 +38,9 @@
 [branch]
   sort = -committerdate
 
+[push]
+  autoSetupRemote = true
+
 [includeIf "gitdir:~/Projects/gitlab/"]
   path = ~/Projects/gitlab/.gitconfig
 
-[push]
-  autoSetupRemote = true

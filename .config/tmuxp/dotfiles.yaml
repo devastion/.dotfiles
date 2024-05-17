@@ -1,0 +1,9 @@
+session_name: dotfiles
+windows:
+  - window_name: nvim
+    layout: tiled
+    shell_command_before:
+      - cd ~/.dotfiles/
+    panes:
+      - shell_command:
+          - nvim .
