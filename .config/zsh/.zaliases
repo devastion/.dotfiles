@@ -1,6 +1,11 @@
-#!/bin/sh
+#!/bin/zsh
 
+# git
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%ci) %C(bold blue)<%an>%Creset' --abbrev-commit"
-alias ls="eza -la --icons --group-directories-first"
+
+# ls
+alias ls="eza --long --all --grid -h --icons --group-directories-first --sort=extension"
+
+# search
 alias grep="rg"
 alias search="fzf --preview 'bat --color=always --style=numbers --line-range=:500 {}' | xargs nvim"

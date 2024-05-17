@@ -45,6 +45,10 @@ zstyle ':fzf-tab:*' fzf-command ftb-tmux-popup
 zstyle ':fzf-tab:*' fzf-command ftb-tmux-popup
 
 eval "$(direnv hook zsh)"
+
 [ -f "${ZDOTDIR}/.zaliases" ] && source "${ZDOTDIR}/.zaliases"
-[[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
+[[ ! -f "${XDG_CONFIG_HOME}/zsh/.p10k.zsh" ]] || source ~/.config/zsh/.p10k.zsh
+
+# fnm
+eval "$(fnm env --use-on-cd)"
 

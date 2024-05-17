@@ -15,15 +15,11 @@ export XDG_PROJECTS_DIR=${XDG_PROJECTS_DIR:-$HOME/Projects}
   done
 } XDG_{CONFIG,CACHE,DATA,STATE}_HOME XDG_{RUNTIME,PROJECTS}_DIR
 
+# zsh
 export ZDOTDIR="${ZDOTDIR:-$HOME/.config/zsh}"
 export ZPLUGINDIR="${ZPLUGINDIR:-$ZDOTDIR/plugins}"
+
+# zim - zsh plugin manager
 export ZIM_HOME="${ZIM_HOME:-$XDG_CACHE_HOME/zim}"
 export ZIM_CONFIG_FILE="${ZIM_CONFIG_FILE:-$ZDOTDIR/.zimrc}"
-export DOTFILES="${DOTFILES:-$HOME/.dotfiles}"
-export TMUX_PLUGINS_PATH="${TMUX_PLUGINS_PATH:-$HOME/.tmux/plugins}"
 
-export PNPM_HOME="${XDG_DATA_HOME}/pnpm"
-case ":$PATH:" in
-  *":$PNPM_HOME:"*) ;;
-  *) export PATH="$PNPM_HOME:$PATH" ;;
-esac
