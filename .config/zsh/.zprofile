@@ -1,5 +1,5 @@
 export LANG="en_US.UTF-8"
-export EDITOR="vi -e"
+export EDITOR="nvim"
 export VISUAL="nvim"
 export WORDCHARS="*?[]~=&;&%^(){}<>"
 
