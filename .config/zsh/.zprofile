@@ -3,6 +3,13 @@ export EDITOR="nvim"
 export VISUAL="nvim"
 export WORDCHARS="*?[]~=&;&%^(){}<>"
 
+# zsh
+export ZPLUGINDIR="${ZPLUGINDIR:-$ZDOTDIR/plugins}"
+
+# zim - zsh plugin manager
+export ZIM_HOME="${ZIM_HOME:-$XDG_CACHE_HOME/zim}"
+export ZIM_CONFIG_FILE="${ZIM_CONFIG_FILE:-$ZDOTDIR/.zimrc}"
+
 # homebrew
 export HOMEBREW_PREFIX="/opt/homebrew";
 export HOMEBREW_CELLAR="/opt/homebrew/Cellar";
@@ -50,3 +57,4 @@ fpath=(
 )
 
 bindkey -e
+
