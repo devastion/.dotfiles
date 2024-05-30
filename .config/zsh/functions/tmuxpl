@@ -1,1 +1,6 @@
-tmuxp load `tmuxp ls | fzf`
+SESSION_NAME=`tmuxp ls | fzf`
+if [[ -z $SESSION_NAME ]]; then
+  return 1 2>/dev/null || exit 1
+else
+  tmuxp load $SESSION_NAME
+fi
