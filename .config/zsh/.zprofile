@@ -34,6 +34,7 @@ typeset -gU fpath path cdpath
 path=(
   "/opt/homebrew/bin"
   "/opt/homebrew/sbin"
+  "/opt/homebrew/opt/node@20/bin"
   "${HOME}/.cargo/bin"
   "${HOME}/.local/bin"
   "${HOME}/.orbstack/bin"
