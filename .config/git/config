@@ -2,6 +2,11 @@
   name = Dimitar Banev
   email = banev_dimitar@mail.com
 
+[alias]
+	co = checkout
+	ci = commit
+	st = status
+
 [color]
   status = auto
   diff = auto
