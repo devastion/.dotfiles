@@ -1,1 +1,2 @@
-[[ -n ${1} ]] && mkdir -p ${1} && builtin cd ${1}
+#!/usr/bin/env bash
+[[ -n "${1}" ]] && mkdir -p "${1}" && builtin cd "${1}" || return

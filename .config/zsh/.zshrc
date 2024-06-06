@@ -21,7 +21,7 @@ fi
 source ${ZIM_HOME}/init.zsh
 
 # load custom functions
-autoload -Uz ${fpath[1]}/*(:t)
+autoload -Uz ${fpath[2]}/*(:t)
 
 # zstyle
 zstyle ':completion:*:git-checkout:*' sort false
