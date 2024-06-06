@@ -53,5 +53,5 @@ eval "$(direnv hook zsh)"
 [[ ! -f "${XDG_CONFIG_HOME}/zsh/.p10k.zsh" ]] || source ~/.config/zsh/.p10k.zsh
 
 # fnm
-eval "$(fnm env --use-on-cd)"
+eval "$(fnm env --use-on-cd --version-file-strategy=recursive --resolve-engines)"
 
