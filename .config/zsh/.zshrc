@@ -21,7 +21,7 @@ fi
 source ${ZIM_HOME}/init.zsh
 
 # load custom functions
-autoload -Uz ${fpath[2]}/*(:t)
+autoload -Uz ${ZDOTDIR}/functions/*(:t)
 
 # zstyle
 zstyle ':completion:*:git-checkout:*' sort false
@@ -44,8 +44,6 @@ zstyle ':completion:*' use-cache true
 zstyle ':completion:*' rehash true
 zstyle ':fzf-tab:complete:cd:*' fzf-preview 'eza -1 --color=always $realpath'
 zstyle ':fzf-tab:*' switch-group '<' '>'
-zstyle ':fzf-tab:*' fzf-command ftb-tmux-popup
-zstyle ':fzf-tab:*' fzf-command ftb-tmux-popup
 
 eval "$(direnv hook zsh)"
 
@@ -55,3 +53,7 @@ eval "$(direnv hook zsh)"
 # fnm
 eval "$(fnm env --use-on-cd --version-file-strategy=recursive --resolve-engines)"
 
+# fzf
+function zvm_after_init() {
+  source <(fzf --zsh)
+}

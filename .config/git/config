@@ -31,7 +31,6 @@
 
 [delta]
   navigate = true
-  light = false
   side-by-side = true
   line-numbers = true
   hyperlinks = true

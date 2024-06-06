@@ -1,12 +1,10 @@
 zmodule romkatv/powerlevel10k --use degit
 zmodule environment
 zmodule zsh-users/zsh-completions
-zmodule archive
 zmodule jeffreytse/zsh-vi-mode
 zmodule completion
 zmodule Aloxaf/fzf-tab
 zmodule zdharma-continuum/fast-syntax-highlighting
 zmodule zsh-users/zsh-autosuggestions
-zmodule fzf
 zmodule olets/zsh-abbr
 zmodule $ZPLUGINDIR/pnpm-shell-completion
