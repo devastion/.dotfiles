@@ -6,6 +6,7 @@
 	co = checkout
 	ci = commit
 	st = status
+	about = "!describe() { msg=\"$1\"; git config branch.\"$(git rev-parse --abbrev-ref HEAD)\".description ${msg:+\"$msg\"}; }; describe"
 
 [color]
   status = auto

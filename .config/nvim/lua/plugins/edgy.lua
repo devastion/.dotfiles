@@ -15,7 +15,7 @@ return {
     },
     opts = function()
       local opts = {
-        right = {
+        bottom = {
           {
             ft = "toggleterm",
             size = { height = 0.4 },

@@ -28,6 +28,9 @@ export DOTFILES="${DOTFILES:-$HOME/.dotfiles}"
 # tmux
 export TMUX_PLUGINS_PATH="${TMUX_PLUGINS_PATH:-$HOME/.tmux/plugins}"
 
+# fzf
+export FZF_DEFAULT_OPTS='--tmux'
+
 # ensure path arrays do not contain duplicates.
 typeset -gU fpath path cdpath
 
