@@ -7,7 +7,7 @@ alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %
 alias ls="eza --long --all --grid -h --icons --group-directories-first --sort=extension"
 
 # safety
-alias rm="safe-rm"
+alias rm="safe-rm -i"
 
 # misc
 alias grep="rg"
