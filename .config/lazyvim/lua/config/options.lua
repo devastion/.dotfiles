@@ -4,3 +4,5 @@
 
 -- Enable / Disable autoformat
 vim.g.autoformat = true
+
+vim.opt.scrolloff = 10
