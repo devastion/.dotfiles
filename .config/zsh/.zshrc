@@ -58,5 +58,4 @@ eval "$(fnm env --use-on-cd --version-file-strategy=recursive --resolve-engines)
 function zvm_after_init() {
   source <(fzf --zsh)
   bindkey ' ' magic-space
-  unsetopt SHARE_HISTORY
 }
