@@ -33,12 +33,11 @@ return {
           {
             ft = "lazyterm",
             title = "LazyTerm",
-            size = { height = 0.4 },
+            size = { height = 0.25 },
             filter = function(buf)
               return not vim.b[buf].lazyterm_cmd
             end,
           },
-          "Trouble",
           { ft = "qf", title = "QuickFix" },
           {
             ft = "help",
@@ -50,6 +49,28 @@ return {
           },
           { title = "Spectre", ft = "spectre_panel", size = { height = 0.4 } },
           { title = "Neotest Output", ft = "neotest-output-panel", size = { height = 15 } },
+        },
+        right = {
+          {
+            ft = "trouble",
+            pinned = true,
+            title = "Diagnostics",
+            size = { height = 0.4 },
+            filter = function(_buf, win)
+              return vim.w[win].trouble.mode == "diagnostics"
+            end,
+            open = "Trouble diagnostics focus=false filter.severity=vim.diagnostic.severity.ERROR",
+          },
+          {
+            ft = "trouble",
+            pinned = true,
+            title = "Symbols",
+            size = { height = 0.6 },
+            filter = function(_buf, win)
+              return vim.w[win].trouble.mode == "symbols"
+            end,
+            open = "Trouble symbols position=left focus=false filter.buf=0",
+          },
         },
         keys = {
           -- increase width
@@ -70,19 +91,19 @@ return {
           end,
         },
       }
-      for _, pos in ipairs({ "top", "bottom", "left", "right" }) do
-        opts[pos] = opts[pos] or {}
-        table.insert(opts[pos], {
-          ft = "trouble",
-          filter = function(_buf, win)
-            return vim.w[win].trouble
-              and vim.w[win].trouble.position == pos
-              and vim.w[win].trouble.type == "split"
-              and vim.w[win].trouble.relative == "editor"
-              and not vim.w[win].trouble_preview
-          end,
-        })
-      end
+      -- for _, pos in ipairs({ "top", "bottom", "left", "right" }) do
+      --   opts[pos] = opts[pos] or {}
+      --   table.insert(opts[pos], {
+      --     ft = "trouble",
+      --     filter = function(_buf, win)
+      --       return vim.w[win].trouble
+      --         and vim.w[win].trouble.position == pos
+      --         and vim.w[win].trouble.type == "split"
+      --         and vim.w[win].trouble.relative == "editor"
+      --         and not vim.w[win].trouble_preview
+      --     end,
+      --   })
+      -- end
       return opts
     end,
   },
