@@ -57,5 +57,6 @@ eval "$(fnm env --use-on-cd --version-file-strategy=recursive --resolve-engines)
 # fzf
 function zvm_after_init() {
   source <(fzf --zsh)
-  bindkey ' ' magic-space
+  bindkey ' ' abbr-expand-and-insert
+  bindkey '^ ' magic-space
 }
