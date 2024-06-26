@@ -40,6 +40,7 @@
   "debug.toolBarLocation": "docked",
   "debug.onTaskErrors": "debugAnyway",
   "editor.tabSize": 4,
+  "editor.cursorSurroundingLines": 10,
   "editor.wordWrap": "wordWrapColumn",
   "editor.wordWrapColumn": 80,
   "editor.bracketPairColorization.enabled": true,
