@@ -2,6 +2,9 @@ export LANG="en_US.UTF-8"
 export EDITOR="nvim"
 export VISUAL="nvim"
 export WORDCHARS="*?[]~=&;&%^(){}<>"
+export PAGER="less"
+# use if batman not installed from bat-extras
+# export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
 # zsh
 export ZPLUGINDIR="${ZPLUGINDIR:-$ZDOTDIR/plugins}"
@@ -24,9 +27,6 @@ esac
 
 # dotfiles
 export DOTFILES="${DOTFILES:-$HOME/.dotfiles}"
-
-# tmux
-export TMUX_PLUGINS_PATH="${TMUX_PLUGINS_PATH:-$HOME/.tmux/plugins}"
 
 # fzf
 export FZF_DEFAULT_OPTS='--tmux 80%'
