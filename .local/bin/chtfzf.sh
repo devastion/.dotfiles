@@ -72,8 +72,8 @@ function getPath {
 function openSheet {
   if [[ "$1" == "" ]]; then exit; fi # Exit if empty string
   case "$openMode" in
-  tmux) tmux popup -E -w 90% -h 90% bash -c "curl -sg "cht.sh/$*" | less -R" ;;
-  bash) curl -sg "cht.sh/$*" | less -R ;;
+  tmux) tmux popup -E -w 80% -h 80% bash -c "curl -sg "cht.sh/$*" | BAT_PAGER='less -R' bat" ;;
+  bash) curl -sg "cht.sh/$*" | BAT_PAGER="less" bat ;;
   *) echo "Unknown openMode, set -t to use tmux, or no args to use bash directly" ;;
   esac
 }
