@@ -167,6 +167,9 @@
     "/Users/banev/Library/Application Support/Code/User/custom.css"
   ],
   // vim
+  "extensions.experimental.affinity": {
+    "vscodevim.vim": 1
+  },
   "vim.enableNeovim": true,
   "vim.useSystemClipboard": true,
   "vim.highlightedyank.enable": true,
