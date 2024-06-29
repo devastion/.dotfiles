@@ -31,6 +31,9 @@ export DOTFILES="${DOTFILES:-$HOME/.dotfiles}"
 # fzf
 export FZF_DEFAULT_OPTS='--tmux 80%'
 
+# zsh-vi-mode
+export ZVM_VI_SURROUND_BINDKEY="s-prefix"
+
 # ensure path arrays do not contain duplicates.
 typeset -gU fpath path cdpath
 
