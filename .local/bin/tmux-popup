@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+if [[ -z "${TMUX}" ]]; then
+  echo "You are not in TMUX session"
+  exit 1
+fi
+
+SESSION_NAME="${1}"
+POPUP_SESSION_NAME="${SESSION_NAME}-popup"
+
+if [[ "${SESSION_NAME}" == *"popup"* ]]; then
+  tmux detach
+else
+  tmux display-popup -w 75% -E "tmux new-session -A -s ${POPUP_SESSION_NAME}"
+fi
+
+exit 0
