@@ -5,4 +5,4 @@ lazy-lock.json
 .config/tmux/plugins
 .config/tmuxp
 .config/vale/styles
-
+.config/karabiner/automatic_backups

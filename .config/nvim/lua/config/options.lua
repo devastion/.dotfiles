@@ -3,6 +3,8 @@
 -- Add any additional options here
 
 -- Enable / Disable autoformat
-vim.g.autoformat = true
+vim.g.autoformat = false
 
 vim.opt.scrolloff = 10
+
+vim.g.lazyvim_picker = "fzf"

@@ -318,6 +318,17 @@
       ]
     }
   ],
+  "vim.insertModeKeyBindings": [
+    {
+      "before": [
+        "j",
+        "k"
+      ],
+      "after": [
+        "<Esc>"
+      ]
+    }
+  ],
   "vim.normalModeKeyBindingsNonRecursive": [
     {
       "before": [
