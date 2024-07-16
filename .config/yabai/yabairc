@@ -46,16 +46,16 @@ yabai -m config \
 # yabai -m signal --add event=display_changed action="yabai -m window --focus \$(yabai -m query --windows --space | jq .[0].id)"
 
 # focus window after application is hidden
-# yabai -m signal --add event=application_hidden action="yabai -m window --focus \$(yabai -m query --windows --space | jq .[0].id)"
+yabai -m signal --add event=application_hidden action="yabai -m window --focus \$(yabai -m query --windows --space | jq .[0].id)"
 
 # focus window after application is terminated
-# yabai -m signal --add event=application_terminated action="yabai -m window --focus \$(yabai -m query --windows --space | jq .[0].id)"
+yabai -m signal --add event=application_terminated action="yabai -m window --focus \$(yabai -m query --windows --space | jq .[0].id)"
 
 # focus window after windows is destroyed
-# yabai -m signal --add event=window_destroyed action="yabai -m window --focus \$(yabai -m query --windows --space | jq .[0].id)"
+yabai -m signal --add event=window_destroyed action="yabai -m window --focus \$(yabai -m query --windows --space | jq .[0].id)"
 
 # focus window after windows is minimized
-# yabai -m signal --add event=window_minimized action="yabai -m window --focus \$(yabai -m query --windows --space | jq .[0].id)"
+yabai -m signal --add event=window_minimized action="yabai -m window --focus \$(yabai -m query --windows --space | jq .[0].id)"
 
 # disable yabai for these apps
 yabai -m rule --add app="^Discord$" manage=off sub-layer=below
