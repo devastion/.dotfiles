@@ -54,10 +54,13 @@
   "editor.suggestSelection": "recentlyUsedByPrefix",
   "editor.stickyScroll.enabled": true,
   "editor.hover.sticky": true,
-  "files.autoSave": "onWindowChange",
+  "files.autoSave": "onFocusChange",
   "files.eol": "\n",
   "files.insertFinalNewline": true,
   "files.simpleDialog.enable": true,
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
   "git.autofetch": true,
   "git.enableSmartCommit": true,
   "git.untrackedChanges": "separate",
@@ -133,6 +136,25 @@
       "source.organizeImports": "never"
     }
   },
+  // php
+   // PHP Formatter bmewburn.vscode-intelephense-client or
+   "laravel-pint.enable": true,
+   "[php]": {
+       "editor.defaultFormatter": "open-southeners.laravel-pint"
+   },
+   // Laravel Extra Intellisense (docker settings)
+   "LaravelExtraIntellisense.basePathForCode": "/var/www",
+   "LaravelExtraIntellisense.phpCommand": "docker-compose exec -w /var/www/ php php -r \"{code}\"",
+   // Laravel Blade Snippets
+   "blade.format.enable": true, // if you would like to enable blade format
+   "[blade]": {
+       "emmet.triggerExpansionOnTab": true, // enable tab to expanse emmet tags
+       "editor.autoClosingBrackets": "always",
+       "editor.defaultFormatter": "onecentlin.laravel-blade" // use formatter for blade files
+   },
+   // Laravel Artisan (docker settings)
+   "artisan.docker.enabled": true,
+   "artisan.docker.command": "docker-compose exec php", // php is the name of docker-compose service
   // json schemas
   "json.schemas": [
     {
@@ -159,9 +181,6 @@
     "Dimitar",
     "wilks"
   ],
-  // vale
-  "vale.valeCLI.path": "/opt/homebrew/bin/vale",
-  "vale.valeCLI.config": "/Users/banev/.config/vale/.vale.ini",
   // custom visuals
   "apc.imports": [
     "/Users/banev/Library/Application Support/Code/User/custom.css"

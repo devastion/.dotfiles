@@ -5,7 +5,7 @@ if [[ -z "${TMUX}" ]]; then
   exit 1
 fi
 
-SESSION_NAME="${1}"
+SESSION_NAME=$(tmux display-message -p -F '#{session_name}')
 POPUP_SESSION_NAME="${SESSION_NAME}-popup"
 
 if [[ "${SESSION_NAME}" == *"popup"* ]]; then

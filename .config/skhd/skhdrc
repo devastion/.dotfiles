@@ -1,4 +1,2 @@
-# default mode
-:: default : borders active_color=0xffe1e3e4
-
+.load "yabai-keybinds"
 .load "yabai-prefixed"
