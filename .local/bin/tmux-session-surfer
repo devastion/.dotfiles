@@ -12,3 +12,4 @@ else
   tmux switch -t "${SESSION}"
 fi
 
+exit 0
