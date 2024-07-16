@@ -41,7 +41,7 @@
   "debug.onTaskErrors": "debugAnyway",
   "editor.tabSize": 4,
   "editor.cursorSurroundingLines": 10,
-  "editor.wordWrap": "wordWrapColumn",
+  "editor.wordWrap": "off",
   "editor.wordWrapColumn": 80,
   "editor.bracketPairColorization.enabled": true,
   "editor.guides.bracketPairs": true,

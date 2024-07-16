@@ -6,7 +6,7 @@
 > Use GNU Stow to symlink the files
 
 ```sh
-git clone https://github.com/devastion/.dotfiles.git ~/.dotfiles && brew install stow && cd ~/.dotfiles && stow.
+git clone https://github.com/devastion/dotfiles.git && brew install stow && cd ~/.dotfiles && stow . -t $HOME
 ```
 
 To remove symbolic links use
