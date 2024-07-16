@@ -68,6 +68,7 @@ yabai -m rule --add app="^Activity Monitor$" manage=off sub-layer=below
 yabai -m rule --add app="^Karabiner-Elements$" manage=off sub-layer=below
 yabai -m rule --add app="^Calendar$" manage=off sub-layer=below
 yabai -m rule --add app="^Slack$" manage=off sub-layer=below
+yabai -m rule --add app="^Reeder$" manage=off sub-layer=below
 
 # launch apps on proper space / display
 yabai -m rule --add app="^iTerm2$" display=2

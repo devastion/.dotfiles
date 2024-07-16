@@ -46,8 +46,6 @@ zstyle ':fzf-tab:complete:cd:*' fzf-preview 'eza -1 --color=always $realpath'
 zstyle ':fzf-tab:*' switch-group '<' '>'
 zstyle ':fzf-tab:*' fzf-flags '--tmux' '80%'
 
-eval "$(direnv hook zsh)"
-
 [ -f "${ZDOTDIR}/.zaliases" ] && source "${ZDOTDIR}/.zaliases"
 [[ ! -f "${XDG_CONFIG_HOME}/zsh/.p10k.zsh" ]] || source ~/.config/zsh/.p10k.zsh
 
