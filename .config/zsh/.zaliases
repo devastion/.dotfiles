@@ -9,6 +9,9 @@ alias ls="eza --long --all --grid -h --icons --group-directories-first --sort=ex
 # safety
 alias delete="safe-rm -irv"
 
+# nvim
+alias lazyvim="NVIM_APPNAME=lazyvim nvim"
+
 # misc
 alias grep="rg"
 alias man="batman"
