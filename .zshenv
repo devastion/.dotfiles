@@ -18,3 +18,4 @@ export XDG_PROJECTS_DIR=${XDG_PROJECTS_DIR:-$HOME/Projects}
   done
 } XDG_{CONFIG,CACHE,DATA,STATE}_HOME XDG_{RUNTIME,PROJECTS}_DIR
 
+[[ -d "${HOME}/.config/tmux/plugins/tpm" ]] || git clone https://github.com/tmux-plugins/tpm "${HOME}/.config/tmux/plugins/tpm"
