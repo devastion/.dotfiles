@@ -3,8 +3,7 @@ export EDITOR="nvim"
 export VISUAL="nvim"
 export WORDCHARS="*?[]~=&;&%^(){}<>"
 export PAGER="less"
-# use if batman not installed from bat-extras
-# export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
 # zsh
 export ZPLUGINDIR="${ZPLUGINDIR:-$ZDOTDIR/plugins}"
@@ -25,15 +24,11 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 
-# dotfiles
-export DOTFILES="${DOTFILES:-$HOME/.dotfiles}"
-
 # fzf
 export FZF_DEFAULT_OPTS='--tmux 80%'
 
 # zsh-vi-mode
 export ZVM_VI_SURROUND_BINDKEY="s-prefix"
-export ZVM_VI_INSERT_ESCAPE_BINDKEY=jk
 
 # ensure path arrays do not contain duplicates.
 typeset -gU fpath path cdpath

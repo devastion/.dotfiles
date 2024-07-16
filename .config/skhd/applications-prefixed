@@ -7,7 +7,7 @@ applications < escape ; default
 # browsers
 applications < b: open -a "Brave Browser"; skhd -k "escape"
 applications < lshift - b: open -n -a "Brave Browser"; skhd -k "escape"
-applications < c: open - a "Google Chrome"; skhd -k "escape"
+applications < c: open -a "Google Chrome"; skhd -k "escape"
 applications < lshift - c: open -n -a "Google Chrome"; skhd -k "escape"
 
 # terminals

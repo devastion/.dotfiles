@@ -6,6 +6,7 @@
 	co = checkout
 	ci = commit
 	st = status
+  lg = "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%ci) %C(bold blue)<%an>%Creset' --abbrev-commit"
 	about = "!describe() { msg=\"$1\"; git config branch.\"$(git rev-parse --abbrev-ref HEAD)\".description ${msg:+\"$msg\"}; }; describe"
 
 [color]
