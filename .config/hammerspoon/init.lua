@@ -16,3 +16,8 @@
 --   hs.alert.show("Hello World! \ntest")
 --   -- hs.execute("skhd -k 'hyper-space'", true)
 -- end)
+
+-- test = hs.menubar.new()
+-- test:setTitle("TEST")
+
+yabaiSpaces = hs.loadSpoon("YabaiSpaces")

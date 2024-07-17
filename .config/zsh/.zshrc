@@ -60,3 +60,6 @@ function zvm_after_init() {
   bindkey ' ' abbr-expand-and-insert
   bindkey '^ ' magic-space
 }
+
+# zoxide
+eval "$(zoxide init zsh --cmd cd)"

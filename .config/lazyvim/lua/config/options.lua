@@ -4,5 +4,3 @@
 
 -- Enable / Disable autoformat
 vim.g.autoformat = false
-
-vim.g.lazyvim_picker = "fzf"

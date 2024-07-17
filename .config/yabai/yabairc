@@ -46,16 +46,16 @@ yabai -m config \
 # yabai -m signal --add event=display_changed action="yabai -m window --focus \$(yabai -m query --windows --space | jq .[0].id)"
 
 # focus window after application is hidden
-yabai -m signal --add event=application_hidden action="yabai -m window --focus \$(yabai -m query --windows --space | jq .[0].id)"
+yabai -m signal --add event=application_hidden action="yabai -m window --focus recent"
 
 # focus window after application is terminated
-yabai -m signal --add event=application_terminated action="yabai -m window --focus \$(yabai -m query --windows --space | jq .[0].id)"
+yabai -m signal --add event=application_terminated action="yabai -m window --focus recent"
 
 # focus window after windows is destroyed
-yabai -m signal --add event=window_destroyed action="yabai -m window --focus \$(yabai -m query --windows --space | jq .[0].id)"
+yabai -m signal --add event=window_destroyed action="yabai -m window --focus recent"
 
 # focus window after windows is minimized
-yabai -m signal --add event=window_minimized action="yabai -m window --focus \$(yabai -m query --windows --space | jq .[0].id)"
+yabai -m signal --add event=window_minimized action="yabai -m window --focus recent"
 
 # disable yabai for these apps
 yabai -m rule --add app="^Discord$" manage=off sub-layer=below
@@ -70,10 +70,12 @@ yabai -m rule --add app="^Calendar$" manage=off sub-layer=below
 yabai -m rule --add app="^Slack$" manage=off sub-layer=below
 yabai -m rule --add app="^Reeder$" manage=off sub-layer=below
 yabai -m rule --add app="^Messages$" manage=off sub-layer=below
+yabai -m rule --add app="^Pages$" manage=off sub-layer=below
+yabai -m rule --add app="^System Settings$" manage=off sub-layer=below
+yabai -m rule --add app="^Raycast$" manage=off sub-layer=below
 
 # launch apps on proper space / display
 yabai -m rule --add app="^iTerm2$" display=2
 yabai -m rule --add app="^Brave$" space=1
 yabai -m rule --add app="^Chrome$" space=2
 
-borders active_color=0xffe1e3e4 inactive_color=0xff414550 width=4.0 &

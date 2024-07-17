@@ -1,3 +1,2 @@
-.load "yabai-keybinds"
-.load "yabai-prefixed"
-.load "applications-prefixed"
+.load "yabai"
+.load "applications"

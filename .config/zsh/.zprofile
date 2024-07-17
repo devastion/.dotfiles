@@ -30,13 +30,17 @@ export FZF_DEFAULT_OPTS='--tmux 80%'
 # zsh-vi-mode
 export ZVM_VI_SURROUND_BINDKEY="s-prefix"
 
+# zoxide
+export _ZO_DATA_DIR="${XDG_DATA_HOME:-$HOME/.local/share}"
+export _ZO_RESOLVE_SYMLINKS=1
+
 # ensure path arrays do not contain duplicates.
 typeset -gU fpath path cdpath
 
 path=(
   "/opt/homebrew/bin"
   "/opt/homebrew/sbin"
-  "/opt/homebrew/opt/node@20/bin"
+  "/opt/homebrew/opt/ruby/bin"
   "${HOME}/.cargo/bin"
   "${HOME}/.local/bin"
   "${HOME}/.orbstack/bin"

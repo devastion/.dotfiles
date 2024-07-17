@@ -1,0 +1,21 @@
+ralt - b: open -a "Brave Browser"
+ralt + lshift - b: open -n -a "Brave Browser"
+ralt - c: open -a "Google Chrome"
+ralt + lshift - c: open -n -a "Google Chrome"
+
+ralt - a: open -a "Alacritty"
+ralt + lshift - a: open -n -a "Alacritty"
+ralt - i: open -a "iTerm"
+ralt + lshift - i: open -n -a "iTerm"
+
+ralt + rctrl - d: open -a "Discord"; skhd -k "escape"
+ralt + rctrl - m: open -a "Messages"; skhd -k "escape"
+ralt + rctrl - b: open -a "Bear"; skhd -k "escape"
+ralt + rctrl - r: open -a "Reeder"; skhd -k "escape"
+
+ralt + rctrl - s: open -a "Slack"; skhd -k "escape"
+ralt - m: open -a "Mail"; skhd -k "escape"
+ralt + rctrl - c: open -a "Calendar"; skhd -k "escape"
+
+rctrl - s: alacritty -e chtfzf.sh
+
