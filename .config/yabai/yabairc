@@ -57,25 +57,13 @@ yabai -m signal --add event=window_destroyed action="yabai -m window --focus rec
 # focus window after windows is minimized
 yabai -m signal --add event=window_minimized action="yabai -m window --focus recent"
 
-# disable yabai for these apps
-yabai -m rule --add app="^Discord$" manage=off sub-layer=below
-yabai -m rule --add app="^Mail$" manage=off sub-layer=below
-yabai -m rule --add app="^OrbStack$" manage=off sub-layer=below
-yabai -m rule --add app="^App Store$" manage=off sub-layer=below
-yabai -m rule --add app="^Calculator$" manage=off sub-layer=below
-yabai -m rule --add app="^Finder$" manage=off sub-layer=below
-yabai -m rule --add app="^Activity Monitor$" manage=off sub-layer=below
-yabai -m rule --add app="^Karabiner-Elements$" manage=off sub-layer=below
-yabai -m rule --add app="^Calendar$" manage=off sub-layer=below
-yabai -m rule --add app="^Slack$" manage=off sub-layer=below
-yabai -m rule --add app="^Reeder$" manage=off sub-layer=below
-yabai -m rule --add app="^Messages$" manage=off sub-layer=below
-yabai -m rule --add app="^Pages$" manage=off sub-layer=below
-yabai -m rule --add app="^System Settings$" manage=off sub-layer=below
-yabai -m rule --add app="^Raycast$" manage=off sub-layer=below
+# disable yabai by default
+yabai -m rule --add app=".*" manage=off sub-layer=below grid=6:6:1:1:4:4
 
 # launch apps on proper space / display
-yabai -m rule --add app="^iTerm2$" display=2
-yabai -m rule --add app="^Brave$" space=1
-yabai -m rule --add app="^Chrome$" space=2
+yabai -m rule --add app="^iTerm2$" manage=on sub-layer=normal display=2
+yabai -m rule --add app="^Brave Browser$" manage=on sub-layer=normal space=1
+yabai -m rule --add app="^Alacritty$" manage=on sub-layer=normal
+yabai -m rule --add app="^Code$" manage=on sub-layer=normal
+yabai -m rule --add app="^Google Chrome$" manage=on sub-layer=normal space=2
 
