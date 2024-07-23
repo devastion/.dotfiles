@@ -2,7 +2,7 @@ local obj = {}
 
 -- Metadata
 obj.name = "YabaiSpaces"
-obj.version = "1.0"
+obj.version = "0.1"
 obj.author = "Dimitar Banev <banev_dimitar@mail.com>"
 obj.homepage = "https://github.com/devastion/yabaispaces"
 obj.license = "MIT - https://opensource.org/licenses/MIT"
