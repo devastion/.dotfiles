@@ -17,5 +17,5 @@ ralt + rctrl - s: open -a "Slack"; skhd -k "escape"
 ralt - m: open -a "Mail"; skhd -k "escape"
 ralt + rctrl - c: open -a "Calendar"; skhd -k "escape"
 
-rctrl - s: alacritty -e chtfzf.sh
+rctrl - s: alacritty -e batman bash
 

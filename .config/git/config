@@ -48,6 +48,5 @@
 [push]
   autoSetupRemote = true
 
-[includeIf "gitdir:~/Projects/enetpulse//"]
-  path = ~/Projects/enetpulse/gitconfig
-
+[includeIf "gitdir:~/Projects/gitlab/"]
+  path = ~/Projects/gitlab/.gitconfig

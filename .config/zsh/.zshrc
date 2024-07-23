@@ -62,5 +62,3 @@ function zvm_after_init() {
   bindkey '^[w' forward-word
 }
 
-# zoxide
-eval "$(zoxide init zsh --cmd cd)"
