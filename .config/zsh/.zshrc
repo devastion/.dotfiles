@@ -59,6 +59,7 @@ function zvm_after_init() {
   zvm_bindkey vicmd '/' fzf-history-widget
   bindkey ' ' abbr-expand-and-insert
   bindkey '^ ' magic-space
+  bindkey '^[w' forward-word
 }
 
 # zoxide
