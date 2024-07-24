@@ -30,7 +30,7 @@ yabai -m config \
   bottom_padding 12 \
   left_padding 12 \
   right_padding 12 \
-  window_gap 8 \
+  window_gap 12 \
   layout bsp \
   mouse_modifier cmd \
   mouse_action1 move \
@@ -46,16 +46,20 @@ yabai -m config \
 # yabai -m signal --add event=display_changed action="yabai -m window --focus \$(yabai -m query --windows --space | jq .[0].id)"
 
 # focus window after application is hidden
-yabai -m signal --add event=application_hidden action="yabai -m window --focus recent"
+# yabai -m signal --add event=application_hidden action="yabai -m window --focus recent"
 
 # focus window after application is terminated
-yabai -m signal --add event=application_terminated action="yabai -m window --focus recent"
+# yabai -m signal --add event=application_terminated action="yabai -m window --focus recent"
 
 # focus window after windows is destroyed
-yabai -m signal --add event=window_destroyed action="yabai -m window --focus recent"
+# yabai -m signal --add event=window_destroyed action="yabai -m window --focus recent"
 
 # focus window after windows is minimized
-yabai -m signal --add event=window_minimized action="yabai -m window --focus recent"
+# yabai -m signal --add event=window_minimized action="yabai -m window --focus recent"
+
+# yabai -m signal --add event=application_activated action="yabai -m window --raise"
+# yabai -m signal --add event=application_deactivated action="yabai -m window --lower"
+
 
 # disable yabai by default
 yabai -m rule --add app=".*" manage=off sub-layer=below grid=6:6:1:1:4:4

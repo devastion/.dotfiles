@@ -1,2 +1,97 @@
-.load "yabai"
-.load "applications"
+# MODES #
+
+:: default : borders active_color=0xbf8ebd6b
+:: yabai @ : borders active_color=0xbfe55561
+hyper - space ; yabai
+yabai < hyper - space ; default
+yabai < escape ; default
+
+# END OF MODES #
+
+# YABAI KEYBINDS #
+
+# yabai in default mode #
+
+# window focus
+hyper - h: yabai -m window --focus west
+hyper - j: yabai -m window --focus south || yabai -m window --focus stack.prev || yabai -m window --focus stack.last
+hyper - k: yabai -m window --focus north || yabai -m window --focus stack.next || yabai -m window --focus stack.first
+hyper - l: yabai -m window --focus east
+# window swap
+hyper - a: yabai -m window --swap west
+hyper - s: yabai -m window --swap south
+hyper - w: yabai -m window --swap north
+hyper - d: yabai -m window --swap east
+
+# space focus
+hyper - 1: yabai -m space --focus 1
+hyper - 2: yabai -m space --focus 2
+hyper - 3: yabai -m space --focus 3
+hyper - 4: yabai -m space --focus 4
+hyper - 5: yabai -m space --focus 5
+
+hyper - b : yabai -m space --balance
+hyper - m: yabai -m display --focus next || yabai -m display --focus prev
+hyper - t: yabai -m window --toggle float --grid 6:6:1:1:4:4
+hyper - f: yabai -m window --toggle zoom-fullscreen
+
+# yabai in prefix mode #
+
+# window stacking
+yabai < hyper - a: yabai -m window --stack west --focus
+yabai < hyper - s: yabai -m window --stack south --focus
+yabai < hyper - w: yabai -m window --stack north --focus
+yabai < hyper - d: yabai -m window --stack east --focus
+# window resizing
+yabai < hyper - h: yabai -m window --resize left:-20:0; yabai -m window --resize right:-20:0
+yabai < hyper - j: yabai -m window --resize bottom:0:20; yabai -m window --resize top:0:20
+yabai < hyper - k: yabai -m window --resize top:0:-20; yabai -m window --resize bottom:0:-20
+yabai < hyper - l: yabai -m window --resize right:20:0; yabai -m window --resize left:20:0
+
+# move window to space
+yabai < hyper - 1: yabai -m window --space 1 --focus; skhd -k "escape"
+yabai < hyper - 2: yabai -m window --space 2 --focus; skhd -k "escape"
+yabai < hyper - 3: yabai -m window --space 3 --focus; skhd -k "escape"
+yabai < hyper - 4: yabai -m window --space 4 --focus; skhd -k "escape"
+yabai < hyper - 5: yabai -m window --space 5 --focus; skhd -k "escape"
+# space management
+yabai < c : yabai -m space --create && \
+  index="$(yabai -m query --spaces --display | jq 'map(select(.["is-native-fullscreen"] == false))[-1].index')" && \
+  yabai -m space --focus "${index}"; skhd -k "escape"
+yabai < x : yabai -m space --destroy; skhd -k "escape"
+
+# END OF YABAI KEYBINDS #
+
+# APPLICATION KEYBINDS #
+
+# browsers
+rcmd - b: open -a "Brave Browser"
+rcmd + lshift - b: open -n -a "Brave Browser"
+rcmd - c: open -a "Google Chrome"
+rcmd + lshift - c: open -n -a "Google Chrome"
+
+# terminals
+rcmd - a: open -a "Alacritty"
+rcmd + lshift - a: open -n -a "Alacritty"
+rcmd - i: open -a "iTerm"
+rcmd + lshift - i: open -n -a "iTerm"
+
+# social
+rcmd - d: open -a "Discord"; skhd -k "escape"
+rcmd - n: open -a "Bear"; skhd -k "escape"
+rcmd - r: open -a "Reeder"; skhd -k "escape"
+
+# messaging
+rcmd - s: open -a "Slack"; skhd -k "escape"
+rcmd - m: open -a "Mail"; skhd -k "escape"
+
+# management
+cmd - x: yabai -m window --close
+cmd - m: yabai -m window --minimize
+cmd - 0x32: "${XDG_CONFIG_HOME}/yabai/scripts/cycle-windows.sh" -f
+# cmd - tab: "${XDG_CONFIG_HOME}/yabai/scripts/cycle-windows.sh"
+# END OF APPLICATION KEYBINDS #
+
+# rctrl - s: alacritty -e batman bash
+
+

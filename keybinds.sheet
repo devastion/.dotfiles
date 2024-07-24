@@ -1,0 +1,91 @@
+# --- SKHD --- #
+
+# MODES #
+hyper - space: toggles yabai mode
+escape: go to default mode
+
+# YABAI #
+
+# DEFAULT MODE KEYBINDS #
+
+# Window focus
+hyper - h: focus west window
+hyper - j: focus south window
+hyper - k: focus north window
+hyper - l: focus east window
+
+# Window swap
+hyper - a: swap with west window
+hyper - s: swap with south window
+hyper - w: swap with north window
+hyper - d: swap with east window
+
+# Space focus
+hyper - 1: focus space 1
+hyper - {num}: focus space {num}
+
+# Misc
+hyper - b: balance windows in current space
+hyper - m: toggle display focus
+hyper - t: toggle window float
+hyper - f: toggle window fullscreen
+
+# END OF DEFAULT MODE KEYBINDS #
+
+# YABAI MODE KEYBINDS #
+
+# Window stacking
+hyper - a: stack with west window
+hyper - s: stack with south window
+hyper - w: stack with north window
+hyper - d: stack with east window
+
+# Window resizing
+hyper - h: resize to the west
+hyper - j: resize to the south
+hyper - k: resize to the north
+hyper - l: resize to the east
+
+# Move window to space
+hyper - 1: move to space 1
+hyper - {num}: move to space {num}
+
+# Space management
+c: create new space
+x: destroy current space
+
+# END OF YABAI MODE KEYBINDS #
+
+# END YABAI #
+
+# APPLICATION LAUNCH KEYBINDS #
+
+# Browsers
+rcmd - b: open Brave
+rcmd + lshift - b: open new window of BRave
+rcmd - c: open Chrome
+rcmd + lshift - c: open new window of Chrome
+
+# Terminals
+rcmd - a: open Alacritty
+rcmd - lshift - a: open new window of Alacritty
+rcmd - i: open iTerm2
+rcmd - lshift - i: open new window of iTerm2
+
+# Social
+rcmd - d: open Discord
+rcmd - n: open Bear
+rcmd - r: open Reeder
+
+# Messaging
+rcmd - s: open Slack
+rcmd - m: open Mail
+
+# General
+cmd - x: close window
+cmd - m: minimize window
+cmd - `: cycle floating windows
+
+# END APPLICATION LAUNCH KEYBINDS #
+
+# --- END SKHD --- #
