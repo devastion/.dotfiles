@@ -1,3 +1,3 @@
-[submodule ".config/hammerspoon/Spoons/YabaiSpaces.spoon"]
-	path = .config/hammerspoon/Spoons/YabaiSpaces.spoon
-	url = https://github.com/devastion/yabai-spaces
+[submodule ".config/hammerspoon/yabai-spaces"]
+	path = .config/hammerspoon/yabai-spaces
+	url = https://github.com/devastion/yabai-spaces.git
