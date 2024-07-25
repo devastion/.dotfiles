@@ -92,6 +92,6 @@ cmd - 0x32: "${XDG_CONFIG_HOME}/yabai/scripts/cycle-windows.sh" -f
 # cmd - tab: "${XDG_CONFIG_HOME}/yabai/scripts/cycle-windows.sh"
 # END OF APPLICATION KEYBINDS #
 
-# rctrl - s: alacritty -e batman bash
+rcmd - h: alacritty -e bat ~/Projects/github/dotfiles/keybinds.sheet
 
 

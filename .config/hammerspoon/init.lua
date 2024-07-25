@@ -16,5 +16,11 @@
 --   hs.alert.show("Hello World! \ntest")
 --   -- hs.execute("skhd -k 'hyper-space'", true)
 -- end)
-
+require("hs.ipc")
 yabaiSpaces = hs.loadSpoon("YabaiSpaces")
+if yabaiSpaces then
+  yabaiSpaces:start()
+end
+
+stackline = require("stackline")
+stackline:init()

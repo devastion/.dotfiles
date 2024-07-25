@@ -52,11 +52,17 @@ zstyle ':fzf-tab:*' fzf-flags '--tmux' '80%'
 # fnm
 eval "$(fnm env --use-on-cd --version-file-strategy=recursive --resolve-engines)"
 
-# fzf
 function zvm_after_init() {
+  # fzf
   source <(fzf --zsh)
+
+  # zvm normal mode
   zvm_bindkey vicmd 'r' fzf-history-widget
   zvm_bindkey vicmd '/' fzf-history-widget
+  zvm_bindkey vicmd '^j' up-line-or-history
+  zvm_bindkey vicmd '^k' down-line-or-history
+
+  # bindkeys
   bindkey ' ' abbr-expand-and-insert
   bindkey '^ ' magic-space
   bindkey '^[w' forward-word
