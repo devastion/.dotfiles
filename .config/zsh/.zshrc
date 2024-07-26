@@ -68,6 +68,7 @@ function zvm_after_init() {
   zvm_bindkey vicmd '/' fzf-history-widget
   zvm_bindkey vicmd '^j' down-line-or-history
   zvm_bindkey vicmd '^k' up-line-or-history
+  zvm_bindkey vicmd '^h' per-directory-history-toggle-history
 
   # bindkeys
   bindkey ' ' abbr-expand-and-insert

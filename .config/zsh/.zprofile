@@ -30,6 +30,10 @@ export FZF_DEFAULT_OPTS='--tmux 80%'
 # zsh-vi-mode
 export ZVM_VI_SURROUND_BINDKEY="s-prefix"
 
+# per-directory-history
+export HISTORY_BASE="${ZDOTDIR}/.zsh_history_per_directory"
+export PER_DIRECTORY_HISTORY_TOGGLE="^h"
+
 # ensure path arrays do not contain duplicates.
 typeset -gU fpath path cdpath
 
