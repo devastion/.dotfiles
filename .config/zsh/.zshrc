@@ -55,19 +55,25 @@ eval "$(fnm env --use-on-cd --version-file-strategy=recursive --resolve-engines)
 # direnv
 eval "$(direnv hook zsh)"
 
-function zvm_after_init() {
-  # fzf
-  source <(fzf --zsh)
+# fzf
+source <(fzf --zsh)
 
+# setopt
+setopt no_hist_verify
+
+# zvm
+function zvm_after_init() {
   # zvm normal mode
   zvm_bindkey vicmd 'r' fzf-history-widget
   zvm_bindkey vicmd '/' fzf-history-widget
-  zvm_bindkey vicmd '^j' up-line-or-history
-  zvm_bindkey vicmd '^k' down-line-or-history
+  zvm_bindkey vicmd '^j' down-line-or-history
+  zvm_bindkey vicmd '^k' up-line-or-history
 
   # bindkeys
   bindkey ' ' abbr-expand-and-insert
   bindkey '^ ' magic-space
   bindkey '^[w' forward-word
+  bindkey '^j' down-line-or-history
+  bindkey '^k' up-line-or-history
 }
 

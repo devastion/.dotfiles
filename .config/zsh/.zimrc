@@ -9,3 +9,4 @@ zmodule zdharma-continuum/fast-syntax-highlighting
 zmodule zsh-users/zsh-autosuggestions
 zmodule olets/zsh-abbr
 zmodule $ZPLUGINDIR/pnpm-shell-completion
+zmodule $ZPLUGINDIR/utility
