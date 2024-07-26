@@ -37,32 +37,8 @@ yabai -m config \
   mouse_action2 resize \
   mouse_drop_action stack
 
-# yabai -m config --space sm layout stack
-
-# focus window after active space changes
-# yabai -m signal --add event=space_changed action="yabai -m window --focus \$(yabai -m query --windows --space | jq .[0].id)"
-
-# focus window after active display changes
-# yabai -m signal --add event=display_changed action="yabai -m window --focus \$(yabai -m query --windows --space | jq .[0].id)"
-
-# focus window after application is hidden
-# yabai -m signal --add event=application_hidden action="yabai -m window --focus recent"
-
-# focus window after application is terminated
-# yabai -m signal --add event=application_terminated action="yabai -m window --focus recent"
-
-# focus window after windows is destroyed
-# yabai -m signal --add event=window_destroyed action="yabai -m window --focus recent"
-
-# focus window after windows is minimized
-# yabai -m signal --add event=window_minimized action="yabai -m window --focus recent"
-
-# yabai -m signal --add event=application_activated action="yabai -m window --raise"
-# yabai -m signal --add event=application_deactivated action="yabai -m window --lower"
-
-
 # disable yabai by default
-yabai -m rule --add app=".*" manage=off sub-layer=below grid=6:6:1:1:4:4
+yabai -m rule --add app=".*" manage=off
 
 # launch apps on proper space / display
 yabai -m rule --add app="^iTerm2$" manage=on sub-layer=normal display=2
@@ -71,3 +47,7 @@ yabai -m rule --add app="^Alacritty$" manage=on sub-layer=normal
 yabai -m rule --add app="^Code$" manage=on sub-layer=normal
 yabai -m rule --add app="^Google Chrome$" manage=on sub-layer=normal space=2
 
+yabai -m space 1 --label main
+yabai -m space 2 --label chrome
+yabai -m space 3 --label code
+yabai -m space 4 --label small

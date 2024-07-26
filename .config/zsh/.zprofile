@@ -31,7 +31,7 @@ export FZF_DEFAULT_OPTS='--tmux 80%'
 export ZVM_VI_SURROUND_BINDKEY="s-prefix"
 
 # per-directory-history
-export HISTORY_BASE="${ZDOTDIR}/.zsh_history_per_directory"
+export HISTORY_BASE="${XDG_CACHE_HOME}/.zsh_history_per_directory"
 export PER_DIRECTORY_HISTORY_TOGGLE="^h"
 
 # ensure path arrays do not contain duplicates.

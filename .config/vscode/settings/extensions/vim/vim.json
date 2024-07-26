@@ -1,0 +1,15 @@
+{
+  "extensions.experimental.affinity": {
+    "vscodevim.vim": 1
+  },
+  "vim.camelCaseMotion.enable": true,
+  "vim.foldfix": true,
+  "vim.highlightedyank.color": "#a9dc7660",
+  "vim.highlightedyank.duration": 250,
+  "vim.highlightedyank.enable": true,
+  "vim.leader": "<space>",
+  "vim.showMarksInGutter": true,
+  "vim.smartRelativeLine": true,
+  "vim.useSystemClipboard": true,
+  "vim.easymotion": true
+}

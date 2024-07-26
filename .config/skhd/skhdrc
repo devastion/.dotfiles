@@ -34,11 +34,11 @@ hyper - b : yabai -m space --balance
 hyper - m: yabai -m display --focus next || yabai -m display --focus prev
 hyper - t: yabai -m window --toggle float --grid 6:6:1:1:4:4
 hyper - f: yabai -m window --toggle zoom-fullscreen
+hyper - r: yabai -m window --grid 6:6:1:1:4:4
 
 # yabai in prefix mode #
 
 # window stacking
-yabai < hyper + rcmd - s: yabai -m window --insert stack; skhd  -k "escape"
 yabai < hyper - a: yabai -m window --stack west --focus; skhd -k "escape"
 yabai < hyper - s: yabai -m window --stack south --focus; skhd -k "escape"
 yabai < hyper - w: yabai -m window --stack north --focus; skhd -k "escape"

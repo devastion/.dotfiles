@@ -1,0 +1,6 @@
+{
+  "files.autoSave": "onWindowChange",
+  "files.eol": "auto",
+  "files.insertFinalNewline": false, // configure per project
+  "files.simpleDialog.enable": true
+}

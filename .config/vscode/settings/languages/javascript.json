@@ -1,0 +1,7 @@
+{
+  "javascript.preferGoToSourceDefinition": true,
+  "javascript.referencesCodeLens.enabled": true,
+  "javascript.referencesCodeLens.showOnAllFunctions": true,
+  "javascript.suggest.paths": true,
+  "javascript.validate.enable": true
+}

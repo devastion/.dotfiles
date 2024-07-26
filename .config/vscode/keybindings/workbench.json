@@ -1,0 +1,28 @@
+[
+  {
+    "key": "shift+l",
+    "command": "workbench.action.nextEditor",
+    "when": "vim.mode != 'Insert'"
+  },
+  {
+    "key": "shift+h",
+    "command": "workbench.action.previousEditor",
+    "when": "vim.mode != 'Insert'"
+  },
+  {
+    "key": "ctrl+up",
+    "command": "workbench.action.increaseViewHeight"
+  },
+  {
+    "key": "ctrl+down",
+    "command": "workbench.action.decreaseViewHeight"
+  },
+  {
+    "key": "ctrl+left",
+    "command": "workbench.action.decreaseViewWidth"
+  },
+  {
+    "key": "ctrl+right",
+    "command": "workbench.action.increaseViewWidth"
+  }
+]

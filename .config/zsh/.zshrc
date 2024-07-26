@@ -43,7 +43,7 @@ zstyle ':completion:*:functions' ignored-patterns '(_*|pre(cmd|exec))'
 zstyle ':completion:*' use-cache true
 zstyle ':completion:*' rehash true
 zstyle ':fzf-tab:complete:cd:*' fzf-preview 'eza -1 --color=always $realpath'
-zstyle ':fzf-tab:*' switch-group '<' '>'
+zstyle ':fzf-tab:*' switch-group 'H' 'L'
 zstyle ':fzf-tab:*' fzf-flags '--tmux' '80%'
 
 [ -f "${ZDOTDIR}/.zaliases" ] && source "${ZDOTDIR}/.zaliases"
@@ -57,9 +57,6 @@ eval "$(direnv hook zsh)"
 
 # fzf
 source <(fzf --zsh)
-
-# setopt
-setopt no_hist_verify
 
 # zvm
 function zvm_after_init() {

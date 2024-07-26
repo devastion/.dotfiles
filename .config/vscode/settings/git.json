@@ -1,0 +1,7 @@
+{
+  "git.autofetch": true,
+  "git.enableSmartCommit": true,
+  "git.inputValidation": true,
+  "git.untrackedChanges": "separate",
+  "scm.diffDecorationsGutterWidth": 2
+}

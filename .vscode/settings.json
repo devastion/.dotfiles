@@ -1,0 +1,19 @@
+{
+  "json.schemas": [
+    {
+      "fileMatch": [
+        ".config/vscode/settings/**/*.json",
+        ".config/vscode/settings/**/*.jsonc",
+      ],
+      "url": "vscode://schemas/settings/user"
+    },
+    {
+      "fileMatch": [
+        ".config/keybindings/settings/**/*.json",
+        ".config/keybindings/settings/**/*.jsonc",
+      ],
+      "url": "vscode://schemas/keybindings"
+    }
+  ],
+  "cSpell.language": "en,en-US"
+}

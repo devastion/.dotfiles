@@ -1,0 +1,33 @@
+{
+  "vim.normalModeKeyBindings": [
+    {
+      "before": [
+        "<leader>",
+        "w",
+        "q"
+      ],
+      "commands": [
+        "quokka.toggle"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "w",
+        "w"
+      ],
+      "commands": [
+        "wallaby.start"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "p"
+      ],
+      "commands": [
+        "clipboard-manager.editor.pickAndPaste"
+      ]
+    }
+  ]
+}

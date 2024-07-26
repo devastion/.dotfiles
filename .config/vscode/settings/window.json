@@ -1,0 +1,6 @@
+{
+  "window.commandCenter": false,
+  "window.dialogStyle": "custom",
+  "window.restoreWindows": "none",
+  "window.title": "${rootName} ${separator} ${activeRepositoryBranchName}"
+}

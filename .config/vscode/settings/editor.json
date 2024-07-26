@@ -1,0 +1,28 @@
+{
+  "editor.accessibilitySupport": "off",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.cursorSurroundingLines": 10,
+  "editor.fontFamily": "JetbrainsMono Nerd Font",
+  "editor.fontSize": 17,
+  "editor.guides.bracketPairs": true,
+  "editor.guides.bracketPairsHorizontal": false,
+  "editor.hover.sticky": true,
+  "editor.lineNumbers": "relative",
+  "editor.linkedEditing": true,
+  "editor.minimap.autohide": true,
+  "editor.minimap.maxColumn": 200,
+  "editor.minimap.renderCharacters": false,
+  "editor.minimap.scale": 2,
+  "editor.minimap.showSlider": "always",
+  "editor.multiCursorModifier": "alt",
+  "editor.renderWhitespace": "all",
+  "editor.smoothScrolling": true,
+  "editor.stickyScroll.enabled": true,
+  "editor.suggestSelection": "recentlyUsedByPrefix",
+  "editor.tabSize": 2, // set per project
+  "editor.indentSize": 2, // or use editorconfig
+  "editor.wordSeparators": "`~!@#%^&*()=+[{]}\\|;:'\",.<>/?",
+  "editor.wordWrap": "off",
+  "editor.wordWrapColumn": 80
+}

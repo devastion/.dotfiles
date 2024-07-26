@@ -1,0 +1,82 @@
+{
+  "vim.normalModeKeyBindings": [
+    {
+      "before": [
+        "<leader>",
+        "c",
+        "f"
+      ],
+      "commands": [
+        "editor.action.formatDocument"
+      ],
+      "when": "editorFocus"
+    },
+    {
+      "before": [
+        "<leader>",
+        "c",
+        "F"
+      ],
+      "commands": [
+        "editor.action.formatDocument.multiple"
+      ],
+      "when": "editorFocus"
+    },
+    {
+      "before": [
+        "<leader>",
+        "c",
+        "A"
+      ],
+      "commands": [
+        "editor.action.sourceAction"
+      ],
+      "when": "editorFocus"
+    },
+    {
+      "commands": [
+        "editor.action.quickFix"
+      ],
+      "before": [
+        "<leader>",
+        "c",
+        "q"
+      ],
+      "when": "editorFocus"
+    },
+    {
+      "when": "editorFocus",
+      "commands": [
+        "editor.action.codeAction"
+      ],
+      "before": [
+        "<leader>",
+        "c",
+        "a"
+      ],
+    },
+    {
+      "commands": [
+        "editor.action.rename"
+      ],
+      "before": [
+        "<leader>",
+        "c",
+        "r"
+      ],
+      "when": "editorFocus"
+    },
+    {
+      "commands": [
+        "workbench.files.action.showActiveFileInExplorer",
+        "renameFile"
+      ],
+      "before": [
+        "<leader>",
+        "c",
+        "R"
+      ],
+      "when": "editorFocus"
+    },
+  ]
+}

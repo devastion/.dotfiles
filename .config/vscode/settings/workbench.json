@@ -1,0 +1,14 @@
+{
+  "workbench.colorTheme": "One Dark Pro Darker",
+  "workbench.editor.closeOnFileDelete": true,
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.highlightModifiedTabs": true,
+  "workbench.editor.revealIfOpen": false,
+  "workbench.editor.wrapTabs": true,
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.preferredDarkColorTheme": "One Dark Pro Darker",
+  "workbench.settings.enableNaturalLanguageSearch": false,
+  "workbench.sideBar.location": "right",
+  "workbench.startupEditor": "none",
+  "workbench.statusBar.visible": true
+}

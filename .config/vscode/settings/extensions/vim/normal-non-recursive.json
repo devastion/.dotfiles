@@ -1,0 +1,69 @@
+{
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "after": [
+        "leader",
+        "leader",
+        "/"
+      ],
+      "before": [
+        "s"
+      ]
+    },
+    {
+      "after": [
+        "leader",
+        "leader",
+        "leader",
+        "j"
+      ],
+      "before": [
+        "S"
+      ]
+    },
+    {
+      "before": [
+        "<Esc>"
+      ],
+      "commands": [
+        ":nohl"
+      ]
+    },
+    {
+      "after": [
+        "leader",
+        "w"
+      ],
+      "before": [
+        "w"
+      ]
+    },
+    {
+      "after": [
+        "leader",
+        "b"
+      ],
+      "before": [
+        "b"
+      ]
+    },
+    {
+      "after": [
+        "leader",
+        "e"
+      ],
+      "before": [
+        "e"
+      ]
+    },
+    {
+      "after": [
+        "leader",
+        "space"
+      ],
+      "commands": [
+        "workbench.action.showCommands"
+      ]
+    }
+  ]
+}

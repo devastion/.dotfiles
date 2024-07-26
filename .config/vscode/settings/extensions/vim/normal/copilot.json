@@ -1,0 +1,44 @@
+{
+  "vim.normalModeKeyBindings": [
+    {
+      "before": [
+        "<leader>",
+        "a",
+        "a"
+      ],
+      "commands": [
+        "workbench.panel.chat.view.copilot.focus"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "a",
+        "f"
+      ],
+      "commands": [
+        "github.copilot.interactiveEditor.fix"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "a",
+        "e"
+      ],
+      "commands": [
+        "github.copilot.chat.explain.palette"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "a",
+        "t"
+      ],
+      "commands": [
+        "github.copilot.toggleCopilot"
+      ]
+    },
+  ]
+}

@@ -1,0 +1,340 @@
+{
+  "vim.normalModeKeyBindings": [
+    {
+      "before": [
+        "<leader>",
+        "b",
+        "p"
+      ],
+      "commands": [
+        "workbench.action.pinEditor"
+      ],
+      "when": "!activeEditorIsPinned"
+    },
+    {
+      "before": [
+        "<leader>",
+        "b",
+        "u"
+      ],
+      "commands": [
+        "workbench.action.unpinEditor"
+      ],
+      "when": "activeEditorIsPinned"
+    },
+    {
+      "before": [
+        "<leader>",
+        "b",
+        "P"
+      ],
+      "commands": [
+        "workbench.action.closeAllEditors"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "b",
+        "l"
+      ],
+      "commands": [
+        "workbench.action.closeEditorsToTheLeft"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "b",
+        "r"
+      ],
+      "commands": [
+        "workbench.action.closeEditorsToTheRight"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "b",
+        "d"
+      ],
+      "commands": [
+        "workbench.action.closeActiveEditor"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "b",
+        "o"
+      ],
+      "commands": [
+        "workbench.action.closeOtherEditors"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "c",
+        "f"
+      ],
+      "commands": [
+        "editor.action.formatDocument"
+      ],
+      "when": "editorFocus"
+    },
+    {
+      "before": [
+        "<leader>",
+        "c",
+        "F"
+      ],
+      "commands": [
+        "editor.action.formatDocument.multiple"
+      ],
+      "when": "editorFocus"
+    },
+    {
+      "before": [
+        "<leader>",
+        "c",
+        "A"
+      ],
+      "commands": [
+        "editor.action.sourceAction"
+      ],
+      "when": "editorFocus"
+    },
+    {
+      "commands": [
+        "editor.action.quickFix"
+      ],
+      "before": [
+        "<leader>",
+        "c",
+        "q"
+      ],
+      "when": "editorFocus"
+    },
+    {
+      "when": "editorFocus",
+      "commands": [
+        "editor.action.codeAction"
+      ],
+      "before": [
+        "<leader>",
+        "c",
+        "a"
+      ]
+    },
+    {
+      "commands": [
+        "editor.action.rename"
+      ],
+      "before": [
+        "<leader>",
+        "c",
+        "r"
+      ],
+      "when": "editorFocus"
+    },
+    {
+      "commands": [
+        "workbench.files.action.showActiveFileInExplorer",
+        "renameFile"
+      ],
+      "before": [
+        "<leader>",
+        "c",
+        "R"
+      ],
+      "when": "editorFocus"
+    },
+    {
+      "before": [
+        "<leader>",
+        "a",
+        "a"
+      ],
+      "commands": [
+        "workbench.panel.chat.view.copilot.focus"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "a",
+        "f"
+      ],
+      "commands": [
+        "github.copilot.interactiveEditor.fix"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "a",
+        "e"
+      ],
+      "commands": [
+        "github.copilot.chat.explain.palette"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "a",
+        "t"
+      ],
+      "commands": [
+        "github.copilot.toggleCopilot"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "f",
+        "f"
+      ],
+      "commands": [
+        "workbench.action.quickOpen"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "f",
+        "e"
+      ],
+      "commands": [
+        "workbench.files.action.showActiveFileInExplorer"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "f",
+        "E"
+      ],
+      "commands": [
+        "workbench.files.action.toggleVisibility"
+      ]
+    },
+    {
+      "commands": [
+        "workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup"
+      ],
+      "before": [
+        "<leader>",
+        "f",
+        "b"
+      ]
+    },
+    {
+      "before": [
+        "g",
+        "0"
+      ],
+      "commands": [
+        "workbench.action.openEditorAtIndex1"
+      ]
+    },
+    {
+      "before": [
+        "g",
+        "$"
+      ],
+      "commands": [
+        "workbench.action.lastEditorInGroup"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "/"
+      ],
+      "commands": [
+        "workbench.action.findInFiles"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "s",
+        "r"
+      ],
+      "commands": [
+        "editor.action.startFindReplaceAction"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "s",
+        "d"
+      ],
+      "commands": [
+        "workbench.actions.view.problems"
+      ]
+    },
+    {
+      "after": [
+        "c",
+        "s"
+      ],
+      "before": [
+        "s",
+        "r"
+      ]
+    },
+    {
+      "after": [
+        "y",
+        "s"
+      ],
+      "before": [
+        "s",
+        "a"
+      ]
+    },
+    {
+      "after": [
+        "d",
+        "s"
+      ],
+      "before": [
+        "s",
+        "d"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "w",
+        "q"
+      ],
+      "commands": [
+        "quokka.toggle"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "w",
+        "w"
+      ],
+      "commands": [
+        "wallaby.start"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "p"
+      ],
+      "commands": [
+        "clipboard-manager.editor.pickAndPaste"
+      ]
+    }
+  ],
+}

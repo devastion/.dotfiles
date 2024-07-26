@@ -1,0 +1,34 @@
+{
+  // Avoid duplicate clips in the list
+  "clipboard-manager.avoidDuplicates": true,
+
+  // Time in milliseconds to check changes in clipboard. Set zero to disable.
+  "clipboard-manager.checkInterval": 500,
+
+  // Maximum clipboard size in bytes.
+  "clipboard-manager.maxClipboardSize": 1000000,
+
+  // Maximum number of clips to save in clipboard
+  "clipboard-manager.maxClips": 100,
+
+  // Move used clip to top in the list
+  "clipboard-manager.moveToTop": true,
+
+  // Get clips only from VSCode
+  "clipboard-manager.onlyWindowFocused": true,
+
+  // View a preview while you are choosing the clip
+  "clipboard-manager.preview": false,
+
+  // Set location to save the clipboard file, set false to disable
+  "clipboard-manager.saveTo": null,
+
+  // Enable completion snippets
+  "clipboard-manager.snippet.enabled": false,
+
+  // Maximum number of clips to suggests in snippets (Zero for all)
+  "clipboard-manager.snippet.max": 10,
+
+  // Default prefix for snippets completion (clip1, clip2, ...)
+  "clipboard-manager.snippet.prefix": "clip"
+}

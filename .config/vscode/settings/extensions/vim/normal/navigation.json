@@ -1,0 +1,24 @@
+{
+  "vim.normalModeKeyBindings": [
+    {
+      // First buffer
+      "before": [
+        "g",
+        "0"
+      ],
+      "commands": [
+        "workbench.action.openEditorAtIndex1"
+      ]
+    },
+    {
+      // Last buffer
+      "before": [
+        "g",
+        "$"
+      ],
+      "commands": [
+        "workbench.action.lastEditorInGroup"
+      ]
+    }
+  ]
+}

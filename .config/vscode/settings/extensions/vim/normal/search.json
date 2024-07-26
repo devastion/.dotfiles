@@ -1,0 +1,33 @@
+{
+  "vim.normalModeKeyBindings": [
+    {
+      "before": [
+        "<leader>",
+        "/"
+      ],
+      "commands": [
+        "workbench.action.findInFiles"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "s",
+        "r"
+      ],
+      "commands": [
+        "editor.action.startFindReplaceAction"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "s",
+        "d"
+      ],
+      "commands": [
+        "workbench.actions.view.problems"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "vim.normalModeKeyBindings": [
+    {
+      "after": [
+        "c",
+        "s"
+      ],
+      "before": [
+        "g",
+        "s",
+        "r"
+      ]
+    },
+    {
+      "after": [
+        "g",
+        "y",
+        "s",
+      ],
+      "before": [
+        "s",
+        "a"
+      ]
+    },
+    {
+      "after": [
+        "g",
+        "d",
+        "s",
+      ],
+      "before": [
+        "s",
+        "d"
+      ]
+    }
+  ]
+}
