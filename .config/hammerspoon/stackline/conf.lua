@@ -27,7 +27,7 @@ c.appearance.offset                   = {}                  -- Offset controls p
 c.appearance.offset.y                 = 2                   -- Distance from top of the window to render indicators
 c.appearance.offset.x                 = 5                   -- Distance away from the edge of the window to render indicators
 
-c.appearance.shouldFade               = true                -- Enable/disable fade animations
+c.appearance.shouldFade               = false                -- Enable/disable fade animations
 c.appearance.fadeDuration             = 0.2                 -- Duration of fade animations (seconds)
 
 -- Features

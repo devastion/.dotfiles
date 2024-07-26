@@ -26,3 +26,16 @@ stow --dir=~/.dotfiles --target=~/
 
 stow -d ~/.dotfiles -t ~/
 ```
+## TODO
+
+```txt
+You'll need to rebind the shortcut through DefaultKeyBinding.dict.
+
+Go to ~/Library/KeyBindings/DefaultKeyBinding.dict (you'll need to mkdir and touch the file if it doesn't exist).
+
+Add this:
+
+{
+    "^/" = "noop:";
+}
+```

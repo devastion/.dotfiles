@@ -52,6 +52,9 @@ zstyle ':fzf-tab:*' fzf-flags '--tmux' '80%'
 # fnm
 eval "$(fnm env --use-on-cd --version-file-strategy=recursive --resolve-engines)"
 
+# direnv
+eval "$(direnv hook zsh)"
+
 function zvm_after_init() {
   # fzf
   source <(fzf --zsh)
