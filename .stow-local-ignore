@@ -2,8 +2,12 @@
 \.DS_Store
 \.editorconfig
 \.gitignore
-^/README.*
-^/LICENSE.*
-^/Brewfile
-^/.gitmodules
-^/keybinds.sheet
+/README.*
+/LICENSE.*
+/Brewfile
+/.gitmodules
+/keybinds.sheet
+/todo.txt
+/done.txt
+/report.txt
+
