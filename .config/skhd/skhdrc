@@ -74,8 +74,6 @@ rcmd + lshift - c: open -n -a "Google Chrome"
 # terminals
 rcmd - a: open -a "Alacritty"
 rcmd + lshift - a: open -n -a "Alacritty"
-rcmd - i: open -a "iTerm"
-rcmd + lshift - i: open -n -a "iTerm"
 
 # social
 rcmd - d: open -a "Discord"; skhd -k "escape"
@@ -87,7 +85,7 @@ rcmd - s: open -a "Slack"; skhd -k "escape"
 rcmd - m: open -a "Mail"; skhd -k "escape"
 
 # management
-cmd - x: yabai -m window --close
+rcmd - x: yabai -m window --close
 cmd - m: yabai -m window --minimize
 cmd - 0x32: "${XDG_CONFIG_HOME}/yabai/scripts/cycle-windows.sh" -f
 # cmd - tab: "${XDG_CONFIG_HOME}/yabai/scripts/cycle-windows.sh"
