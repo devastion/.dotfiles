@@ -21,15 +21,15 @@ return {
         end,
         desc = "Open the file manager",
       },
-      -- {
-      --   "<c-up>",
-      --   function()
-      --     -- NOTE: requires a version of yazi that includes
-      --     -- https://github.com/sxyazi/yazi/pull/1305 from 2024-07-18
-      --     require("yazi").toggle()
-      --   end,
-      --   desc = "Resume the last yazi session",
-      -- },
+      {
+        "<c-up>",
+        function()
+          -- NOTE: requires a version of yazi that includes
+          -- https://github.com/sxyazi/yazi/pull/1305 from 2024-07-18
+          require("yazi").toggle()
+        end,
+        desc = "Resume the last yazi session",
+      },
     },
     ---@type YaziConfig
     opts = {
