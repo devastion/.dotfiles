@@ -17,10 +17,10 @@
 --   -- hs.execute("skhd -k 'hyper-space'", true)
 -- end)
 require("hs.ipc")
-yabaiSpaces = require("yabai-spaces")
-if yabaiSpaces then
-  yabaiSpaces:start()
-end
+-- yabaiSpaces = require("yabai-spaces")
+-- if yabaiSpaces then
+--   yabaiSpaces:start()
+-- end
 
 stackline = require("stackline")
 stackline:init()
